@@ -243,14 +243,14 @@ El sistema sigue un pipeline estructurado en 7 etapas que se ejecutan en tiempo 
 
 ## 10. Stack Tecnológico
 
-    Python 3.x: Lenguaje principal del proyecto.
-    OpenCV (cv2): Procesamiento de imágenes y visión por computador: conversión de espacios de color, operaciones morfológicas, detección de contornos.
-    mss: Captura de pantalla de alto rendimiento (~1-2ms por frame) con acceso directo a la memoria de video.
-    numpy: Manipulación eficiente de matrices de imágenes.
-    pygetwindow: Detección automática de la ventana del emulador por nombre y obtención de coordenadas.
-    pyautogui: Simulación de entradas de teclado sobre el emulador.
-    keyboard: Detección global de teclas de control (pausar, salir) independientemente de qué ventana tenga el foco.
-    MuMu Player (Android): Emulador Android que ejecuta Banana Kong a resolución 960x540.
+**Python 3.x:** Lenguaje principal del proyecto.
+**OpenCV (cv2):** Procesamiento de imágenes y visión por computador: conversión de espacios de color, operaciones morfológicas, detección de contornos.
+**mss:** Captura de pantalla de alto rendimiento (~1-2ms por frame) con acceso directo a la memoria de video.
+**numpy:** Manipulación eficiente de matrices de imágenes.
+**pygetwindow:** Detección automática de la ventana del emulador por nombre y obtención de coordenadas.
+**pyautogui:** Simulación de entradas de teclado sobre el emulador.
+**keyboard:** Detección global de teclas de control (pausar, salir) independientemente de qué ventana tenga el foco.
+**MuMu Player (Android):** Emulador Android que ejecuta Banana Kong a resolución 960x540.
 
 ---
 
@@ -267,6 +267,7 @@ El sistema sigue un pipeline estructurado en 7 etapas que se ejecutan en tiempo 
 
 ---
 
+<!--
 ## 12. Referencias
 
 [1] arturfog, “Chrome Dino game bot using OpenCV and mss,” GitHub, 2021.
@@ -279,3 +280,4 @@ El sistema sigue un pipeline estructurado en 7 etapas que se ejecutan en tiempo 
 [8] I. Millington and J. Funge, Artificial Intelligence for Games, 2nd ed. Burlington, MA: Morgan Kaufmann, 2009.
 [9] V. Mnih et al., “Human-level control through deep reinforcement learning,” Nature, vol. 518, pp. 529–533, Feb. 2015.
 [10] J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, “You only look once: Unified, real-time object detection,” in Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), Las Vegas, NV, 2016, pp. 779–788.
+-->
