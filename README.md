@@ -363,13 +363,21 @@ El sistema sigue un pipeline estructurado en 7 etapas que se ejecutan en tiempo 
 
 ## 13. Diagramas
 
-![Diagrama](diseno\diagramas\DiagramaArquitectura.png)
+<p align="center">
+  <img src="diseno/diagramas/DiagramaArquitectura.png" alt="Diagrama Arquitectura" width="700">
+</p>
 
-![Diagrama](diseno\diagramas\DiagramaInteraccionEntreModulos.png)
+<p align="center">
+  <img src="diseno/diagramas/DiagramaInteraccionEntreModulos.png" alt="Diagrama Interacción entre Módulos" width="700">
+</p>
 
-![Diagrama](diseno\diagramas\SecuenciaTomadeDecision.png)
+<p align="center">
+  <img src="diseno/diagramas/SecuenciaTomadeDecision.png" alt="Secuencia Toma de Decisión" width="700">
+</p>
 
-![Diagrama](diseno\diagramas\SecuenciaDeteccion.png)
+<p align="center">
+  <img src="diseno/diagramas/SecuenciaDeteccion.png" alt="Secuencia Detección" width="700">
+</p>
 
 ## 14. Referencias
 
