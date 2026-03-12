@@ -361,7 +361,17 @@ El sistema sigue un pipeline estructurado en 7 etapas que se ejecutan en tiempo 
 
 ---
 
-## 13. Referencias
+## 13. Diagramas
+
+![Diagrama](diseno\diagramas\DiagramaArquitectura.png)
+
+![Diagrama](diseno\diagramas\DiagramaInteraccionEntreModulos.png)
+
+![Diagrama](diseno\diagramas\SecuenciaTomadeDecision.png)
+
+![Diagrama](diseno\diagramas\SecuenciaDeteccion.png)
+
+## 14. Referencias
 
 [1] arturfog, “Chrome Dino game bot using OpenCV and mss,” GitHub, 2021. [Online]. Available https://github.com/arturfog/dino
 
