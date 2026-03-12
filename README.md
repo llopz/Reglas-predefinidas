@@ -293,120 +293,71 @@ El sistema sigue un pipeline estructurado en 7 etapas que se ejecutan en tiempo 
 
 | Prototipo   | Semana(s) | Enfoque                     | Entregable                                                |
 | ----------- | --------- | --------------------------- | --------------------------------------------------------- |
-| Prototipo 1 | S1        | Pipeline mínimo             | Sistema captura → detección → acción funcionando          |
-| Prototipo 2 | S2        | Percepción y reglas básicas | Bot esquiva obstáculos principales                        |
-| Prototipo 3 | S3        | Sistema de supervivencia    | Bot maneja múltiples obstáculos                           |
-| Prototipo 4 | S4–S5     | Estrategia completa         | Bot incorpora preferencia de trayectoria y mejora puntaje |
-| Prototipo 5 | S6–S7     | Ajuste y validación         | Sistema estable y evaluación final                        |
+| Prototipo 1 | S7        | Pipeline mínimo             | Sistema captura → detección → acción funcionando          |
+| Prototipo 2 | S8        | Percepción y reglas básicas | Bot esquiva obstáculos principales                        |
+| Prototipo 3 | S9        | Sistema de supervivencia    | Bot maneja múltiples obstáculos                           |
+| Prototipo 4 | S10–S11   | Estrategia completa         | Bot incorpora preferencia de trayectoria y mejora puntaje |
+| Prototipo 5 | S12–14    | Ajuste y validación         | Sistema estable y evaluación final                        |
 
 ---
 
-### Prototipo 1: Pipeline mínimo (Semana 1)
+### Prototipo 1: Pipeline mínimo
 
-**Hipótesis:** Es posible ejecutar el pipeline completo en tiempo real.
-
-##### Construir
-
-- Integrar captura, detección, reglas y acciones.
-- Detectar al menos un obstáculo y reaccionar con una regla simple.
-
-##### Medir
-
-- Latencia del pipeline.
-- Tiempo de supervivencia en varias ejecuciones.
-
-##### Aprender
-
-- Validar si la detección y reacción ocurren a tiempo.
-
-**Entregable:** Bot funcional mínimo.
+| componente     | Descripción                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Hipótesis**  | Es posible ejecutar el pipeline completo en tiempo real.                                                                 |
+| **Construir**  | - Integrar captura, detección, reglas y acciones.<br>- Detectar al menos un obstáculo y reaccionar con una regla simple. |
+| **Medir**      | - Latencia del pipeline.<br>- Tiempo de supervivencia en varias ejecuciones.                                             |
+| **Aprender**   | - Validar si la detección y reacción ocurren a tiempo.                                                                   |
+| **Entregable** | Bot funcional mínimo.                                                                                                    |
 
 ---
 
-### Prototipo 2: Percepción completa y set de reglas básicas (Semana 2)
+### Prototipo 2: Percepción completa y set de reglas básicas
 
-**Hipótesis:** Los elementos del juego se detectan con menos del 20% de falsos positivos de forma simultánea y la supervivencia mejora debido a un set de reglas basicas.
-
-##### Construir
-
-- Incorporar nuevos obstáculos al módulo de percepción.
-- Definir reglas básicas para esquivarlos.
-
-##### Medir
-
-- Tiempo de supervivencia promedio.
-- Tasa de esquive por obstáculo.
-
-##### Aprender
-
-- Identificar detecciones inestables o reglas insuficientes.
-
-**Entregable:** Bot que sobrevive consistentemente más que sin automatización.
+| componente     | Descripción                                                                                                                                                |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hipótesis**  | Los elementos del juego se detectan con menos del 20% de falsos positivos de forma simultánea y la supervivencia mejora debido a un set de reglas básicas. |
+| **Construir**  | - Incorporar nuevos obstáculos al módulo de percepción.<br>- Definir reglas básicas para esquivarlos.                                                      |
+| **Medir**      | - Tiempo de supervivencia promedio.<br>- Tasa de esquive por obstáculo.                                                                                    |
+| **Aprender**   | - Identificar detecciones inestables o reglas insuficientes.                                                                                               |
+| **Entregable** | Bot que sobrevive consistentemente más que sin automatización.                                                                                             |
 
 ---
 
-### Prototipo 3: Sistema de supervivencia (Semana 3)
+### Prototipo 3: Sistema de supervivencia
 
-**Hipótesis:** Reglas basadas en distancia y prioridad mejoran el comportamiento del agente.
-
-##### Construir
-
-- Refinar detecciones existentes.
-- Implementar lógica basada en proximidad y prioridad entre reglas.
-
-##### Medir
-
-- Tiempo de supervivencia promedio.
-- Principales causas de fallo.
-
-##### Aprender
-
-- Determinar qué situaciones requieren nuevas reglas o ajustes.
-
-**Entregable:** Bot que maneja múltiples obstáculos de forma consistente.
+| componente     | Descripción                                                                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------- |
+| **Hipótesis**  | Reglas basadas en distancia y prioridad mejoran el comportamiento del agente.                            |
+| **Construir**  | - Refinar detecciones existentes.<br>- Implementar lógica basada en proximidad y prioridad entre reglas. |
+| **Medir**      | - Tiempo de supervivencia promedio.<br>- Principales causas de fallo.                                    |
+| **Aprender**   | - Determinar qué situaciones requieren nuevas reglas o ajustes.                                          |
+| **Entregable** | Bot que maneja múltiples obstáculos de forma consistente.                                                |
 
 ---
 
-### Prototipo 4: Estrategia completa (Semanas 4–5)
+### Prototipo 4: Estrategia completa
 
-**Hipótesis:** Integrar una trayectoria preferencial hacia las bananas permite aumentar el puntaje sin afectar la supervivencia.
-
-##### Construir
-
-- Implementar una preferencia de trayectoria hacia bananas cuando no exista riesgo inmediato.
-- Definir prioridad entre supervivencia y recolección.
-
-##### Medir
-
-- Puntaje promedio en múltiples ejecuciones.
-- Conflictos entre reglas.
-
-##### Aprender
-
-- Ajustar reglas para optimizar el desempeño.
-
-**Entregable:** Bot con sistema de decisión completo.
+| componente     | Descripción                                                                                                                                             |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hipótesis**  | Integrar una trayectoria preferencial hacia las bananas permite aumentar el puntaje sin afectar la supervivencia.                                       |
+| **Construir**  | - Implementar una preferencia de trayectoria hacia bananas cuando no exista riesgo inmediato.<br>- Definir prioridad entre supervivencia y recolección. |
+| **Medir**      | - Puntaje promedio en múltiples ejecuciones.<br>- Conflictos entre reglas.                                                                              |
+| **Aprender**   | - Ajustar reglas para optimizar el desempeño.                                                                                                           |
+| **Entregable** | Bot con sistema de decisión completo.                                                                                                                   |
 
 ---
 
-### Prototipo 5: Ajuste y validación final (Semanas 6–7)
+### Prototipo 5: Ajuste y validación final
 
-**Hipótesis:** Ajustes basados en fallos observados permiten estabilizar el sistema.
-
-##### Construir
-
-- Ajustar parámetros de detección y activación de reglas.
-- Ejecutar batería de pruebas.
-
-##### Medir
-
-- Puntaje y estabilidad en múltiples ejecuciones.
-
-##### Aprender
-
-- Identificar las limitaciones del enfoque basado en visión clásica y reglas.
-
-**Entregable:** Sistema validado y métricas finales.
+| componente     | Descripción                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| **Hipótesis**  | Ajustes basados en fallos observados permiten estabilizar el sistema.                       |
+| **Construir**  | - Ajustar parámetros de detección y activación de reglas.<br>- Ejecutar batería de pruebas. |
+| **Medir**      | - Puntaje y estabilidad en múltiples ejecuciones.                                           |
+| **Aprender**   | - Identificar las limitaciones del enfoque basado en visión clásica y reglas.               |
+| **Entregable** | Sistema validado y métricas finales.                                                        |
 
 ---
 
