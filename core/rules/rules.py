@@ -7,8 +7,7 @@ from control.acciones_click import NADA, SALTAR, PLANEAR, BAJAR, DASH
 def obstacle_rule(state):
 
     if state.obstacle_ahead and state.obstacle_distance is not None:
-        return state.obstacle_distance < 120
-    return False
+        return state.obstacle_distance[0] < 120 and state.obstacle_distance[1] < 50
 
 
 def banana_rule_up(state):

@@ -89,7 +89,7 @@ def main():
             descartados = resultados.get("descartados", [])
             mascaras = resultados.get("mascaras", {})
 
-            if settings.DEBUG and not pausado:
+            """if settings.DEBUG and not pausado:
                 total = (
                     len(bananas)
                     + len(troncos)
@@ -100,9 +100,17 @@ def main():
                 if total > 0:
                     print(
                         f"[VISION] bananas={len(bananas)} troncos={len(troncos)} arbustos={len(arbustos)} aviones={len(aviones)} kong={len(kong)}"
-                    )
+                    )"""
 
             # CREAR ESTADO DE JUEGO
+            bananas_relevantes = []
+            banana_objetivo = None
+            banana_objetivo_distance = None
+            objects_relevantes = []
+            nearest_object = None
+            nearest_object_distance = None
+
+            
             if kong:
 
                 kong_x = kong[0].centro_x
@@ -125,6 +133,7 @@ def main():
                     ]
 
                 if objects := troncos + arbustos + aviones:
+                    
                     objects_relevantes = [
                         obj
                         for obj in objects
@@ -137,6 +146,8 @@ def main():
                         nearest_object.centro_x - kong[0].centro_x,
                         nearest_object.centro_y - kong[0].centro_y,
                     ]
+            
+            print(f"nearest_object_distance: {nearest_object_distance}, banana_objetivo_distance: {banana_objetivo_distance}")
 
             estado_juego = GameState(
                 obstacle_ahead=nearest_object is not None,

@@ -65,12 +65,14 @@ class ModuloAcciones:
         pyautogui.mouseDown()
         pyautogui.moveRel(0, 20, duration=0.1)
         pyautogui.mouseUp()
+        pyautogui.moveRel(0, 20, duration=0.1)
 
     def dash(self):
 
         pyautogui.mouseDown(self.x, self.y)
         pyautogui.moveRel(20, 0, duration=0.1)
         pyautogui.mouseUp()
+        pyautogui.moveRel(20, 0, duration=0.1)
 
     def parar(self):
         pyautogui.mouseUp()
